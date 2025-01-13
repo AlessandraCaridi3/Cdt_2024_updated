@@ -1,0 +1,326 @@
+@import url('https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap');
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Newsreader', serif;
+}
+
+/* Regola generale per tutto il testo */
+body {
+    text-align: justify; /* Giustifica tutto il testo del documento */
+    line-height: 1.6; /* Spaziatura tra le righe per migliorare la leggibilità */
+    font-family: 'Times New Roman', Times, serif; /* Font classico leggibile */
+    margin: 1em; /* Margini generali per il corpo del documento */
+    font-size: 1em; /* Dimensione base del testo */
+}
+
+
+
+
+.header {
+    text-align: center;
+    display: flex;
+    background: white;
+    box-shadow: 0.1px 0.1px 5px grey;
+    position: sticky;
+    padding-bottom: 0.5%;
+    margin-bottom: 2%;
+}
+
+.header a {
+    margin-top: 1%;
+    margin-left: -20%;
+}
+
+.header a img { /* Logo La Rass. Sett. */
+    width: 30%;
+    margin-left: 65%;
+}
+
+.header span img { /* Logo UNIPI */
+    width: 12%;
+    margin-top: 5%;
+    margin-left: 30%;
+    padding: 1%;
+}
+
+h5 {
+    font-weight: 400;
+    font-size: 14px;
+    margin-top: -8%;
+    margin-left: 47%;
+    color: black;
+}
+
+/* Heading */
+
+.heading {
+    text-align: center;
+}
+
+/* Tabella info codifica */
+
+table td, th {
+    vertical-align: top;
+}
+
+div#desc_bibl {
+    background: rgb(176, 208, 255);
+    margin: 2% 20% 2% 20%;
+    padding: 2%;
+    border-radius: 20px;
+}
+
+div#desc_bibl h2 {
+    text-align: center;
+    text-decoration: underline;
+    margin-bottom: 2%;
+}
+
+div#desc_bibl table strong {
+    padding: 30px;
+}
+
+/* Legenda pulsanti */
+
+div#legenda_cont {
+    padding-bottom: 2%;
+    margin-bottom: 2%;
+    text-align: center;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: sticky;
+    top: 0;
+}
+
+div#legenda_cont h2 {
+    text-align: center;
+    text-decoration: underline;
+    margin-bottom: 2%;
+    padding-top: 1%;
+}
+
+button {
+    font-size: 17px;
+    margin: 3px;
+    padding: 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    border: none;
+    box-shadow: 0.5px 0.5px 2px grey;
+}
+
+button#person {
+    background: #ff6f69;
+}
+
+button#character {
+    background: #ffcc5c;
+}
+
+button#bibl {
+    background: #ffeead;
+}
+
+button#place {
+    background: rgb(215, 255, 142);
+}
+
+button#event {
+    background: #96ceb4;
+}
+
+button#org {
+    background: #ade6ff;
+}
+
+button#date {
+    background: #adb2ff;
+}
+
+button#verbum {
+    background: #d6adff;
+}
+
+button#foreign {
+    background: #ffadef;
+}
+
+button#cit {
+    background: #ff7df0;
+}
+
+button#num {
+    background: #ebf1dd;
+}
+
+button#expan {
+    background: #dafdfd;
+}
+
+button#reg {
+    background: #e0f0ff;
+}
+
+button#ex {
+    background: #e3e3ff;
+}
+
+button#corr {
+    background: #ffe8e8;
+}
+
+button#clean {
+    margin: 3px;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+/* Testo e immagini facsimile */
+
+.testo_cont h2 {
+    text-align: center;
+    margin: 0;
+    padding: 10px;
+}
+
+.sezione_cont {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.sezione {
+    padding: 10px;
+}
+
+.pagina {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+}
+
+.facsimile {
+    flex: 1;
+    padding: 10px;
+    text-align: center;
+}
+
+table.colonne {
+    display: flex;
+    padding: 10px;
+    max-width: 100%;
+    overflow-x: auto;
+}
+
+table.colonne td {
+    vertical-align: baseline;
+    min-width: 300px;
+    width: fit-content;
+}
+
+.paragr, .paragr_gener {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    margin-bottom: 10px;
+}
+
+.paragr span, .paragr_gener span {
+    min-width: 90px;
+    padding-top: 7px;
+}
+
+.paragr strong, .paragr_gener strong {
+    font-weight: bold;
+}
+
+
+/* Usemap */
+
+area:hover {
+    cursor: pointer;
+}
+
+
+span.selected {
+    background-color: rgb(176, 208, 255);
+    border-radius: 20px;
+    padding: 10px;
+}
+
+/* Infobox di entità + sottolineatura interventi */
+
+span.info {
+    position: absolute;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 0 10px;
+    width: 15%;
+    visibility: hidden;
+}
+
+a {
+    color: black;
+}
+
+a:visited {
+    color: black;
+}
+
+a:hover {
+    color: black;
+}
+
+a:active {
+    color: black;
+}
+
+span.glossario a {
+    text-decoration: underline dotted 1.5px red;
+}
+
+/* Footer */
+
+footer {
+    text-align: center;
+    background: white;
+    box-shadow: 0.1px 0.1px 5px grey;
+    position: sticky;
+    margin-top: 4%;
+    padding-bottom: 2%;
+    padding-top: 2%;
+}
+
+.riga {
+    padding-bottom: 0;
+    margin-bottom: 0;
+    margin-right: 0;
+}
+
+
+.numero-riga {
+    font-size: 0.8em; 
+    margin-right: 10px; 
+    color: #555; 
+    text-align: right; 
+    font-weight: bold;
+}
+
+
+
+
+
